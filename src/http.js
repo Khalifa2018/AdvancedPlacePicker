@@ -16,7 +16,6 @@ export async function fetchUserPlaces() {
   if (!response.ok) {
     throw new Error("Failed to fetch user places");
   }
-
   return resData.places;
 }
 
