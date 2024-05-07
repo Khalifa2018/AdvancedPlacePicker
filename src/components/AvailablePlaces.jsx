@@ -37,16 +37,6 @@ export default function AvailablePlaces({ onSelectPlace }) {
     fetchPlaces();
   }, []);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:3000/places")
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((resData) => {
-  //       setAvailablePlaces(resData.places);
-  //     });
-  // }, []);
-
   if (error) {
     return <Error title="An error occurred!" message={error.message} />;
   }
